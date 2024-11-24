@@ -1,1 +1,253 @@
+* {
+  box-sizing: border-box;
+}
 
+:root {
+  --header-bg: #fffcf4;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* =========== Common ============= */
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  max-width: calc(100% - 48px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+
+.section-desc {
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
+/* =========== Header ============= */
+.header {
+  padding-top: 10px;
+  background: #13575c;
+  min-height: 100vh;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__heading {
+  font-size: 3.5rem;
+  color: rgb(149, 16, 47);
+  line-height: 1.75;
+  font-style: inherit;
+}
+
+.navbar__desc {
+  font-size: 2rem;
+  color: rgb(9, 209, 73);
+  line-height: 1.75;
+  margin-left: 50px;
+}
+
+.navbar__quote {
+  color: rgb(9, 209, 73);
+  margin-left: 500px;
+  font-style: italic;
+}
+
+/* ==============Hero============ */
+.hero__title {
+  display: flex;
+  color: rgb(9, 209, 73);
+  font-style: inherit;
+  line-height: 1.75;
+  font-size: 3.5rem;
+  padding: 8px 50px;
+  text-align: center;
+}
+
+.hero__list {
+  display: flex;
+}
+
+.hero__link {
+  padding: 8px 24px;
+  color: #c9d2da;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300px;
+  line-height: 1.75;
+}
+
+.hero__link:hover,
+.hero__link--active {
+  text-shadow: 1px 0 0 currentColor;
+  color: #fffcf4;
+}
+
+.hero__link--active::before {
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50px;
+  background: #fff;
+  top: -3px;
+  position: relative;
+  right: 9px;
+}
+
+.hero__bottom {
+  display: flex;
+  padding-top: 76px;
+  align-items: center;
+}
+
+.hero__content {
+  width: 40%;
+}
+
+.hero__media {
+  flex: 1;
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
+
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  column-gap: 38px;
+  align-items: center;
+}
+
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+
+.hero__image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__img-large {
+  width: 700px;
+  height: 650px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* ==============Service=========== */
+.service {
+  padding: 170px 0;
+  background-color: #fff;
+}
+
+.section-heading,
+.section-desc {
+  text-align: center;
+}
+
+.section-desc {
+  width: 468px;
+  margin: 0 auto;
+}
+
+.service__row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.service-item {
+  display: flex;
+  width: 470px;
+  padding: 21px;
+  border-radius: 10px;
+  transition: 0.25s;
+  background-repeat: #fff;
+}
+
+.service-item:hover {
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+  color: #fff;
+  background-color: #2e80ce;
+}
+
+.service-item__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 19px;
+  transition: 0.25s;
+}
+
+.service-item__heading {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.service-item__desc {
+  margin-top: 8px;
+  color: #575f66;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
